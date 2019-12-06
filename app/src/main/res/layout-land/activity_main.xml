@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/edittextstyle"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/head"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout style="@style/layout_style">
+
+            <Button
+                android:id="@+id/seven"
+                style="@style/calc_buttonL"
+                android:text="@string/_7" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/calc_buttonL"
+                android:text="@string/_8" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/calc_buttonL"
+                android:text="@string/_9" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_style">
+
+            <Button
+                android:id="@+id/four"
+                style="@style/calc_buttonL"
+                android:text="@string/_4" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/calc_buttonL"
+                android:text="@string/_5" />
+
+            <Button
+                android:id="@+id/six"
+                style="@style/calc_buttonL"
+                android:text="@string/_6" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_style">
+
+            <Button
+                android:id="@+id/one"
+                style="@style/calc_buttonL"
+                android:text="@string/_1" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/calc_buttonL"
+                android:text="@string/_2" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/calc_buttonL"
+                android:text="@string/_3" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_style">
+
+            <Button
+                style="@style/calc_buttonL"
+                android:text="@string/_1"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/calc_buttonL"
+                android:text="@string/_0" />
+
+            <Button
+                style="@style/calc_buttonL"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_style">
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/calc_buttonL"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/minus"
+                style="@style/calc_buttonL"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/equals"
+                style="@style/calc_buttonL"
+                android:text="@string/equals" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_style">
+
+            <Button
+                android:id="@+id/multiply"
+                style="@style/calc_buttonL"
+                android:text="@string/multiply" />
+
+            <Button
+                android:id="@+id/division"
+                style="@style/calc_buttonL"
+                android:text="@string/division" />
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/calc_buttonL"
+                android:text="clear" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
